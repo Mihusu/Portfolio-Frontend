@@ -1,25 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-    theme: {
-      extend: {
-        colors: {
-          cream: '#EFE9F4',
-          bluecity: '#0093d2',
-          bluecity_dark: '#004981'
-        }
-      }
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
     },
-    plugins: [require("daisyui")],
-    daisyui: {
-      styled: true,
-      themes: true,
-      base: true,
-      utils: true,
-      logs: true,
-      rtl: false,
-      prefix: "",
-      darkTheme: "dark",
-    },
-  };
-  
+  },
+  plugins: [],
+};
