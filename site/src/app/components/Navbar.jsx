@@ -22,7 +22,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,16 +32,23 @@ const Navbar = () => {
       }
     };
 
-    // Add event listener for window resize
-    window.addEventListener('resize', handleResize);
+    // Check if window object is defined (to avoid server-side rendering issues)
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+    }
 
     // Cleanup function
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleResize);
+      }
+    };
   }, []);
 
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
-      <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-4'>
+      <div className='flex flex-wrap items-center justify-between mx-auto px-12 py-4'>
         <Link 
           href={"/"} 
           className='text-2xl md:text-5xl text-white font-semibold'
