@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
+import Link from 'next/link'
 
 const TAB_DATA = [
   {
@@ -9,14 +10,17 @@ const TAB_DATA = [
     id: "education", // lowercase
     content: (
       <ul className='list-disc pl-2 ml-2'>
-        <li className='font-bold'>2023-2026 
-          <span className='ml-4'>Aalborg University - Master</span>
+        <li className='font-bold'>2023 - 2026:
+          <Link href={'https://www.aau.dk/uddannelser/kandidat/software-kobenhavn'} className='ml-5 text-blue-500'> Aalborg University</Link>
+          <p className='ml-32'>MSc. Software Engineering</p>
         </li>
-        <li className='font-bold'>2020-2024
-          <span className='ml-4'>Aalborg University - Bachelor</span>
+        <li className='font-bold mt-4'>2020 - 2024:
+          <Link href={'https://www.aau.dk/uddannelser/bachelor/software-koebenhavn'} className='ml-5 text-blue-500'> Aalborg University</Link>
+          <p className='ml-32'>BSc. Software Engineering</p>
         </li>
-        <li className='font-bold'>2017-2020
-          <span className='ml-4'> H.C Ørsted Gymnasium</span>
+        <li className='font-bold mt-4'>2017 - 2020:
+          <Link href={'https://www.tec.dk/h-c-oersted-gymnasiet/'} className='ml-6 text-blue-500'> H.C Ørsted Gymnasium</Link>
+          <p className='ml-32'>Study line: Mathmatics A and Programmning B</p>
         </li>
       </ul>
     ),
@@ -49,8 +53,8 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useState("skills");
+  const [tab, setTab] = useState("education");
+  const [isPending, startTransition] = useState("education");
   
   const handeTabChange = (id) => {
     startTransition(() => {
@@ -60,8 +64,8 @@ const AboutSection = () => {
 
   return (
     <section className='text-white'>
-      <div className='md:grid md:grid-cols-2 gap-8 items-center px-4 py-8 xl:gap-16 sm:py-16 xl:px-16'>
-        <Image src="/images/project-work.jpg" width={450} height={450}/>
+      <div className='md:grid md:grid-cols-2 gap-8 items-center px-4 mb-8 xl:gap-16 sm:py-16 xl:px-16'>
+        <Image src="/images/project-work.jpg" width={450} height={450} alt="ming image" />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4 mt-8'>About me</h2>
           <p className='text-base md:text-lg'>
