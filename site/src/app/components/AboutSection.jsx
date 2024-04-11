@@ -10,8 +10,8 @@ const TAB_DATA = [
     id: "education", // lowercase
     content: (
       <ul className='list-disc pl-2 ml-2'>
-        <li className='font-bold'>2023 - 2026:
-          <Link href={'https://www.aau.dk/uddannelser/kandidat/software-kobenhavn'} className='ml-5 text-blue-500'> Aalborg University</Link>
+        <li className='font-bold'>2023 - TBD:
+          <Link href={'https://www.aau.dk/uddannelser/kandidat/software-kobenhavn'} className='ml-7 text-blue-500'> Aalborg University</Link>
           <p className='ml-32'>MSc. Software Engineering</p>
         </li>
         <li className='font-bold mt-4'>2020 - 2024:
@@ -65,7 +65,7 @@ const AboutSection = () => {
   return (
     <section className='text-white'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center px-4 mb-8 xl:gap-16 sm:py-16 xl:px-16'>
-        <Image src="/images/project-work.jpg" width={450} height={450} alt="ming image" />
+        <Image src="/images/project-work.jpg" className='rounded-xl' width={450} height={450} alt="ming image" />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4 mt-8'>About me</h2>
           <p className='text-base md:text-lg'>
