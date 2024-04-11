@@ -8,15 +8,15 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 const navLinks = [
   {
     title: "About",
-    path: "#About",
+    path: "#about",
   },
   {
     title: "Projects",
-    path: "#Projects",
+    path: "#projects",
   },
   {
     title: "Contact",
-    path: "#Contact",
+    path: "#contact",
   }
 ]
 
