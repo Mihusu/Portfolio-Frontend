@@ -11,7 +11,7 @@ const projectsData = [
     description: "To easy locate a drinking fountain near you",
     image: "./images/projects/P7_V2.jpg",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Mihusu/DrinkingFountain_Backend",
     previewUrl: "/"
   },
   {
@@ -20,7 +20,7 @@ const projectsData = [
     description: " A secure way to transfer ownership of bikes",
     image: "./images/projects/P6_V2.jpg",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Mihusu/myBike_backend",
     previewUrl: "/"
   },
   {
@@ -38,7 +38,7 @@ const projectsData = [
     description: "Learning project to create compilers",
     image: "./images/projects/P4_V2.jpg",
     tag: ["All", "Terminal"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Team-Skarp/BoardGameLanguage",
     previewUrl: "/"
   },
   {
@@ -47,7 +47,7 @@ const projectsData = [
     description: "An inventory & repair management system for GreenMind (former Blue City)",
     image: "./images/projects/P3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "/https://github.com/Mihusu/P3-backend",
     previewUrl: "/"
   },
   {
@@ -56,7 +56,7 @@ const projectsData = [
     description: "Lowering household CO2 emissions from energy consumption through an advice driven through a web application",
     image: "./images/projects/P2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Team-Skarp/Project-skarp",
     previewUrl: "/"
   },
   {
@@ -65,7 +65,7 @@ const projectsData = [
     description: "Selecting particular words to be filtered out from a CV",
     image: "./images/projects/P1.png",
     tag: ["All", "Terminal"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Mihusu/AAU_P1",
     previewUrl: "/"
   },
 ]
@@ -73,7 +73,7 @@ const projectsData = [
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const [isMobile, setIsMobile] = useState(
-    typeof window !== "undefined" ? window.innerWidth <= 550 : false
+    typeof window !== "undefined" ? window.innerWidth <= 576 : false
   );
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 550);
+      setIsMobile(window.innerWidth <= 576);
     };
 
     window.addEventListener("resize", handleResize);
@@ -108,7 +108,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
         My Projects
       </h2>
-      <div className={`text-white flex flex-row justify-center items-center gap-2 py-6 ${isMobile ? 'flex-wrap' : ''}`}>
+      <div className={`text-white flex flex-row justify-center items-center gap-4 py-6 ${isMobile ? 'flex-wrap' : ''}`}>
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -145,7 +145,7 @@ const ProjectsSection = () => {
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              //previewUrl={project.previewUrl}
             />
           </motion.li>
         ))}
