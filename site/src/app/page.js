@@ -5,13 +5,15 @@ import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
+import AchievementsSection from "./components/AchievementsSection";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-[#121212]">
       <Navbar />
-      <div className="flex-grow container mx-auto px-12 mt-20">
+      <div className="flex-grow container mx-auto px-12 mt-24">
         <HeroSection />
+        <AchievementsSection/>
         <AboutSection />
         <ProjectsSection />
         <ContactSection />
