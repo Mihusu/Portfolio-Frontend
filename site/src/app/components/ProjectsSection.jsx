@@ -29,7 +29,7 @@ const projectsData = [
     description: "An educational learning platform for waste pickers in Brazil",
     image: "./images/projects/P5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Educado-App",
     previewUrl: "/"
   },
   {
