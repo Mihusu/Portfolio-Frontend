@@ -1,8 +1,8 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import Link from "next/link";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline"
+import { CodeBracketIcon } from "@heroicons/react/24/outline"
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, /*previewUrl*/ }) => {
   return (
     <div>
       <div
