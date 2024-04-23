@@ -47,7 +47,7 @@ const projectsData = [
     description: "An inventory & repair management system for GreenMind (former Blue City)",
     image: "./images/projects/P3.png",
     tag: ["All", "Web"],
-    gitUrl: "/https://github.com/Mihusu/P3-backend",
+    gitUrl: "https://github.com/Mihusu/P3-backend",
     previewUrl: "/"
   },
   {
