@@ -1,5 +1,4 @@
 "use client"
-import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link'
 import { motion } from "framer-motion";
@@ -18,7 +17,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>
-              Hello, I'm {" "}
+              Hello, I&apos;m {" "}
             </span>
             <br />
             <TypeAnimation
@@ -40,7 +39,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className='flex text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-            I'm a security-oriented person, testing expert and database handling guru. I'm currently looking for a software related job that can help me gain industry leading knowledge.          
+            I&apos;m a security-oriented person, testing expert and database handling guru. I&apos;m currently looking for a software related job that can help me gain industry leading knowledge.          
           </p>
           <div>
             <Link

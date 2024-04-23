@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Inter } from "next/font/google";
 import "./globals.css";
 

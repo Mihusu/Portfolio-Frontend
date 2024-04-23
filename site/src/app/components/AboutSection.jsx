@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
 import Link from 'next/link'
@@ -46,7 +46,7 @@ const TAB_DATA = [
     id: "certifications", // lowercase
     content: (
       <ul>
-        <li>None, but I'm currently taking courses as we speak ;)</li>
+        <li>None, but I&apos;m currently taking courses as we speak ;)</li>
       </ul>
     ),
   }
@@ -54,7 +54,7 @@ const TAB_DATA = [
 
 const AboutSection = () => {
   const [tab, setTab] = useState("education");
-  const [isPending, startTransition] = useState("education");
+  const [/*isPending*/, startTransition] = useState("education");
   
   const handeTabChange = (id) => {
     startTransition(() => {
@@ -69,9 +69,9 @@ const AboutSection = () => {
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4 mt-8'>About me</h2>
           <p className='text-base md:text-lg'>
-            I'm a chinese person where I have lived my whole life in Denmark and currently residing in the capital region of Denmark. 
+            I&apos;m a chinese person where I have lived my whole life in Denmark and currently residing in the capital region of Denmark. 
             My passion is anything from software engineering, testing and security related topics: Visualizing and securing data, making regression test cases and making web and mobile apps. 
-            I'm currently doing a MSc in Software engineering. I'm always happy and quick to learn new technologies and
+            I&apos;m currently doing a MSc in Software engineering. I&apos;m always happy and quick to learn new technologies and
             to expand my knowlegde and skill set.
             My primary technological competencies lie in the following areas:
             Software architecture, cyber security, software development using principles of OOP (Java, Javascript, and Python), 
