@@ -14,10 +14,6 @@ const TAB_DATA = [
           <Link href={'https://www.dtu.dk/english/education/graduate/msc-programmes/computer-science-and-engineering'} className='ml-5 text-blue-500'> Technical University of Denmark</Link>
           <p className='ml-32'>Master of Science (MSc) in Computer Science and Engineering</p>
         </li>
-        <li className='font-bold'>2023 - 2024:
-          <Link href={'https://www.aau.dk/uddannelser/kandidat/software-kobenhavn'} className='ml-5 text-blue-500'> Aalborg University</Link>
-          <p className='ml-32'>MSc. Software Engineering</p>
-        </li>
         <li className='font-bold mt-4'>2020 - 2024:
           <Link href={'https://www.aau.dk/uddannelser/bachelor/software-koebenhavn'} className='ml-5 text-blue-500'> Aalborg University</Link>
           <p className='ml-32'>BSc. Software Engineering</p>
@@ -27,7 +23,7 @@ const TAB_DATA = [
           <p className='ml-32'>Study line: Mathmatics A and Programmning B</p>
         </li>
       </ul>
-    ),
+    ),  
   },
   {
     title: "Skills",
