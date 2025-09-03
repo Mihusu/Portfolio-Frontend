@@ -49,7 +49,7 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <a
-              href="/CV-ENG.pdf"
+              href="/CV - ENG.pdf"
               download="Ming Hui Sun CV"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br  from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 border-white mt-3"
             >
