@@ -10,6 +10,10 @@ const TAB_DATA = [
     id: "education", // lowercase
     content: (
       <ul className='list-disc pl-2 ml-2'>
+        <li className='font-bold mb-4'>2025 - 2026:
+          <Link href={'https://seng.hkust.edu.hk/'} className='ml-5 text-blue-500'> Hong Kong University of Science and Technology</Link>
+          <p className='ml-32'>Exchange student MSc in Computer Science and Engineering</p>
+        </li>
         <li className='font-bold mb-4'>2024 - 2026:
           <Link href={'https://www.dtu.dk/english/education/graduate/msc-programmes/computer-science-and-engineering'} className='ml-5 text-blue-500'> Technical University of Denmark</Link>
           <p className='ml-32'>Master of Science (MSc) in Computer Science and Engineering</p>
