@@ -7,15 +7,24 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Toerst App",
-    description: "To easy locate a drinking fountain near you",
-    image: "./images/projects/P7_V2.jpg",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/Mihusu/DrinkingFountain_Backend",
+    title: "COMP4461 Project 1: Aquatic kingdom of Atlantis",
+    description: "Make the campus more friendly for visiting students from the aquatic kingdom of Atlantis",
+    image: "./images/projects/Atlantis.jpg",
+    tag: ["All"],
+    gitUrl: "https://www.google.com/search?sca_esv=a6493d853efe4d30&rlz=1C1CHBD_daDK1041DK1041&udm=2&fbs=AIIjpHw2KGh6wpocn18KLjPMw8n57XoVNo77u2wv3yhVkwnmKJcuHYbf7YNAsy_9nkGewzem5934SvRuFW1cAqZvaRX4lHeNk_FQVlTSLVOfalvad06ZLI7hAM59gwpS_U6tZ3aeGiD2uFqDHXDPAbPxk8FL6RTrlpCoAobI0aQjfMvShfsGMAdrLag_w-8flLh4Ck-VzCIycXihG7_NO2um1MnQ12hm8Q&q=aquatic+kingdom+of+Atlantis&sa=X&ved=2ahUKEwjHoNfvxeSPAxUPsVYBHb20N88QtKgLegQIFhAB&biw=1536&bih=791&dpr=2#vhid=QeLvKFxdmpJpBM&vssid=mosaic",
     previewUrl: "/"
   },
   {
     id: 2,
+    title: "COMP4461 Project 2: TBD",
+    description: "TBD",
+    image: "./images/projects/TBD.jpg",
+    tag: ["All"],
+    gitUrl: "",
+    previewUrl: "/"
+  },
+  {
+    id: 3,
     title: "Bachelor thesis: MinCykel",
     description: " A secure way to transfer ownership of bikes",
     image: "./images/projects/P6_V2.jpg",
@@ -24,7 +33,7 @@ const projectsData = [
     previewUrl: "/"
   },
   {
-    id: 3,
+    id: 4,
     title: "Educado",
     description: "An educational learning platform for waste pickers in Brazil",
     image: "./images/projects/P5.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "/"
   },
   {
-    id: 4,
+    id: 5,
     title: "Board game language",
     description: "Learning project to create compilers",
     image: "./images/projects/P4_V2.jpg",
@@ -42,7 +51,7 @@ const projectsData = [
     previewUrl: "/"
   },
   {
-    id: 5,
+    id: 6,
     title: "Priotool",
     description: "An inventory & repair management system for GreenMind (former Blue City)",
     image: "./images/projects/P3.png",
@@ -51,7 +60,7 @@ const projectsData = [
     previewUrl: "/"
   },
   {
-    id: 6,
+    id: 7,
     title: "Sustainify",
     description: "Lowering household CO2 emissions from energy consumption through an advice driven through a web application",
     image: "./images/projects/P2.png",
@@ -60,7 +69,7 @@ const projectsData = [
     previewUrl: "/"
   },
   {
-    id: 7,
+    id: 8,
     title: "CV-filter",
     description: "Selecting particular words to be filtered out from a CV",
     image: "./images/projects/P1.png",
