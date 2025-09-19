@@ -31,17 +31,37 @@ const TAB_DATA = [
   },
   {
     title: "Skills",
-    id: "skills", // lowercase
+    id: "skills",
     content: (
-      <ul className='list-disc pl-2 ml-2'>
-        <li>Agile development</li>
-        <li>PostgreSQL</li>
-        <li>JavaScript</li>
-        <li>Node.js</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>React</li>
-        <li>C</li>
+      <ul className='container grid list-disc pl-2 ml-2'>
+        <div className="grid grid-cols-2">
+          {/* First Column */}
+          <div className="column">
+            <li>Agile development</li>
+            <li>GitHub</li>
+            <li>Agile development</li>
+            <li>MongoDB</li>
+            <li>PowerShell</li>
+            <li>Docker</li>
+            <li>Penetration testing</li>
+            <li>Software testing</li>
+            <li>Agile development</li>
+            <li>Microsoft Office</li>
+          </div>
+          
+          {/* Second Column */}
+          <div className="column">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>C#</li>
+            <li>C</li>
+            <li>SQL</li>
+            <li>Node.js</li>
+          </div>
+        </div>
       </ul>
     ),
   },
@@ -60,7 +80,7 @@ const AboutSection = () => {
   const [tab, setTab] = useState("education");
   const [/*isPending*/, startTransition] = useState("education");
   
-  const handeTabChange = (id) => {
+  const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
     });
@@ -76,7 +96,7 @@ const AboutSection = () => {
             I&apos;m a chinese person where I have lived my whole life in Denmark and currently residing in the capital region of Denmark. 
             My passion is anything from software engineering, testing and security related topics: Visualizing and securing data, making regression test cases and making web and mobile apps. 
             I&apos;m currently doing a MSc in Software engineering. I&apos;m always happy and quick to learn new technologies and
-            to expand my knowlegde and skill set.
+            to expand my knowledge and skill set.
             My primary technological competencies lie in the following areas:
             Software architecture, cyber security, software development using principles of OOP (Java, Javascript, and Python), 
             full stack development (MERN Stack, SQL), digital electronics (C) and
@@ -85,21 +105,21 @@ const AboutSection = () => {
           </p>
           <div className='flex flex-row mt-8'>
             <TabButton 
-              selectTab={() => handeTabChange("education")} 
+              selectTab={() => handleTabChange("education")} 
               active={tab === "education"}
             >
               {" "}
               Education{" "}
             </TabButton>
             <TabButton 
-              selectTab={() => handeTabChange("skills")} 
+              selectTab={() => handleTabChange("skills")} 
               active={tab === "skills"}
             >
               {" "}
               Skills{" "}
             </TabButton>
             <TabButton 
-              selectTab={() => handeTabChange("certifications")} 
+              selectTab={() => handleTabChange("certifications")} 
               active={tab === "certifications"}
             >
               {" "}

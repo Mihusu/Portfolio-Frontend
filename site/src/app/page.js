@@ -1,4 +1,4 @@
-import HeroSection from './components/HeroSection';
+import MyCVSection from './components/MyCVSection';
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen bg-[#121212]">
       <Navbar />
       <div className="flex-grow container mx-auto px-12 mt-32">
-        <HeroSection />
+        <MyCVSection />
         <AchievementsSection/>
         <AboutSection />
         <ProjectsSection />

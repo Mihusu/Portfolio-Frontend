@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 import { TypeAnimation } from 'react-type-animation';
 
-const HeroSection = () => {
+const MyCVSection = () => {
   return (
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -80,4 +80,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection;
+export default MyCVSection;
